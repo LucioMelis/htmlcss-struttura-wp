@@ -24,6 +24,13 @@ header{
     background-color: #0884fc;
     margin-bottom: 2.5%;
 }
+/* Regola per delimitare l'altezza del contenuto, ma lo abbiamo già dato nel contenitore */
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
 footer{
     height: 10%;
     background-color: #8801fe;
